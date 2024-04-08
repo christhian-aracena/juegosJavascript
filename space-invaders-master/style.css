@@ -1,0 +1,93 @@
+.grid {
+	width: 600px; /* Doble del ancho original */
+	height: 600px; /* Doble de la altura original */
+	border: solid rgb(255, 255, 255) 2px; /* Ajusta el borde para que sea más visible */
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 100px;
+  }
+  
+  .grid div {
+	width: 40px; /* Doble del ancho original */
+	height: 40px; /* Doble de la altura original */
+  }
+  
+  .invader {
+	background: none;
+	border: none;
+	background-image: url('img/invasor-removebg-preview.png'); /* Ruta a tu imagen de ovni */
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 40px; /* Doble del ancho original */
+	height: 40px; /* Doble de la altura original */
+  }
+  
+  .shooter {
+	background: none;
+	border: none;
+	background-image: url('img/nave.png'); /* Ruta a tu imagen de ovni */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 40px; /* Doble del ancho original */
+	height: 40px; /* Doble de la altura original */
+  }
+  
+  .laser {
+	background-image: url('img/disparo.png'); /* Ruta a tu imagen de ovni */
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 4px; /* Puedes ajustar el tamaño según prefieras */
+	height: 20px; /* Puedes ajustar el tamaño según prefieras */
+  }
+  
+  .boom {
+	background: url('img/explosion.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+  }
+  
+  .results {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 24px; /* Ajusta el tamaño del texto de los resultados */
+    font-family: "Pixelify Sans", sans-serif;
+	color: white;
+  }
+  
+  body {
+	background: url('img/planet-earth-orbit-outer-space-cosmos-3840x2160-8769.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+
+body{
+	background: url('img/planet-earth-orbit-outer-space-cosmos-3840x2160-8769.jpg');
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background: rgb(0, 0, 0);
+}
+
+
+

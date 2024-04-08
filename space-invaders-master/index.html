@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styleMenu.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="fondo">
+      <div class="imagen">
+        <img src="img/logo.png" alt="" srcset="" />
+      </div>
+      <img class="estrellas" src="img/estrellas.png" alt="Estrellas" />
+      <img class="estrellas2" src="img/estrellas.png" alt="Estrellas" />
+    </div>
+
+    <main>
+      <div class="cuadro">
+        <a href="juego.html">Jugar</a>
+      </div>
+
+      <script>
+        setTimeout(function() {
+          document.querySelector('.estrellas2').classList.add('animar');
+        }, 13500); // 13.5 segundos en milisegundos
+      </script>
+      
+      
+    </main>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+/*CONFIGURACION INICIAL*/
+
+@font-face {
+    font-family: 'pixel'; 
+    src: url('space_invaders.ttf') format('truetype');
+
+}
+
+
+* {
+    text-decoration: none;
+    margin: 0rem;
+    padding: 0rem;
+    font-style: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background: rgb(0, 0, 0);
+}
+
+
+
+.fondo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: black;
+}
+
+@keyframes moverEstrellas {
+    0% {
+      transform: translateY(-110vh);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  @keyframes moverEstrellas2 {
+    0% {
+      transform: translateY(-110vh);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  .fondo {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .estrellas {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: auto;
+    animation: moverEstrellas 20s linear infinite;
+  }
+  
+  .estrellas2 {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0; /* Oculta la animación inicialmente */
+    animation: moverEstrellas2 20s linear infinite;
+    animation-delay: 13s; /* Añade un retraso de 13 segundos */
+  }
+  
+  /* Mostrar la animación justo antes de que comience */
+  .estrellas2.animar {
+    opacity: 1;
+  }
+  
+  
+  .logo {
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario para la posición del logo */
+    left: 50px; /* Ajusta según sea necesario para la posición del logo */
+    z-index: 999; /* Asegura que el logo esté por encima de las estrellas */
+  }
+  
+  
+.cuadro {
+    width: 50rem;
+    height: 50rem;
+    background: transparent;
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0);
+
+    z-index: 130;
+    font-size: xx-small;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    backdrop-filter: blur(0.7rem);
+
+    background-color: rgba(9, 18, 19, 0.329);
+    border-radius: 1.4rem;
+    border: white solid 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 2rem;
+
+}
+
+a {
+    all: initial;
+    color: white;
+
+}
+.cuadro a{
+    cursor: pointer;
+    font-size: 12rem;
+
+    font-family: "Pixelify Sans", sans-serif;
+
+
+
+    color: #ccc;
+    list-style: none;
+
+    transition: color 0.5s, text-shadow 0.5s; /* Transición en la regla base */
+    font-size: 5rem;
+}
+
+.cuadro a:hover{
+    text-shadow: 0.3rem 0.3rem 2rem white;
+    color: #ffffff;
+}
+
+.imagen{
+    width: 30rem;
+    height: auto;
+    z-index: 150;
+    position: relative;
+    background: transparent;
+    top: -36rem;
+
+}
+.imagen img{
+    width: 30rem;
+    height: auto;
+    z-index: 50;
+    position: absolute;
+
+    background: transparent;
+    
+}
+
+.teclas img{
+    width: 10rem;
+    height: auto;
+    z-index: 50;
+    position: absolute;
+    background: transparent;
+    margin-top: 290%;
+}
+
+.teclas{
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+#cerrarPestana{
+    display: flex;
+    z-index: 200;
+    color: white;
+}
